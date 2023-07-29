@@ -1,0 +1,30 @@
+{
+  "Global": {
+    "Language": {
+      "en": "English",
+      "ar": "العربية",
+      "tr": "Türkçe"
+    },
+    "Update": {
+      "newUpdateAvailable": "New Update has arrived",
+      "newUpdateMessage": "The app needs to be updated to get the latest features and fixes.",
+      "warning": "Warning! The application will reload, any current progress will be lost!",
+      "cancelUpdate": "Cancel",
+      "startUpdate": "Update"
+    },
+    "ToastDefaults": {
+      "success": "Success!",
+      "warn": "Warning!",
+      "error": "Failure",
+      "successMessage": "Your request has been done successfully. 🎉",
+      "errorMessage": "Unfortunately, an error occur while processing your request. 😞"
+    },
+    "Navigation": {
+      "notifications": "Notifications",
+      "gallery": "Gallery",
+      "workflows": "Workflows",
+      "settings": "Settings",
+      "support-center": "Support Center"
+    }
+  }
+}

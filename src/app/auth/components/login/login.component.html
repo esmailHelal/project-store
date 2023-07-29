@@ -1,0 +1,39 @@
+
+   <!--  <div class="h-full sm:order-first order-last">
+        <img src="../assets/loginPageImg/login.svg" class="h-full" alt="">
+    </div> -->
+
+    <div class="flex items-center justify-center flex-col min-h-screen">
+        <!-- <h1 class="font-bold text-5xl"><span class="text-ta-purple-100 ">You</span>topia</h1> -->
+        <form class="flex flex-col  relative mt-6 items-center lg:w-[25%] w-auto bg-white  rounded-[20px] border border-gray-500 border-opacity-50 backdrop-blur-[30px] p-9" [formGroup]="form"
+            (submit)="createAccount()">
+            <div class="flex flex-col w-full">
+                <label for="" class="text-ta-purple-100">Username*</label>
+                <input type="text" formControlName="username">
+                <mat-error *ngIf="form.controls['username'].errors?.['required'] && form.controls['username'].touched"
+                class="flex text-red-500">
+                    <mat-icon>remove_circle</mat-icon>
+                   username is required
+                </mat-error>
+            </div>
+            <div class=" flex flex-col mt-4 w-full">
+                <label for="" class="text-ta-purple-100">Password*</label>
+                <div class="relative w-full">
+                    <input type="text" formControlName="password" class="w-full" [type]="!passwordHidden? 'password' :'text'">
+                    <img src="assets/loginPageImg/eye.svg" alt="hide password" 
+                    (click)="passwordHidden = !passwordHidden" class="absolute right-[12px] top-[18px]">
+                </div>
+                
+                <mat-error *ngIf="form.controls['password'].errors?.['required'] && form.controls['password'].touched"
+                class="flex text-red-500">
+                    <mat-icon>remove_circle</mat-icon>
+                   Password is required
+                </mat-error>
+                <a class="ta-text-black-100 text-sm">Forget your <span class="text-ta-purple-100">password?</span></a>
+            </div>
+        
+            <button type="submit" class="w-full text-ta-white bg-ta-purple-100 rounded-full p-3 mt-6 mb-3">
+                Login
+            </button>
+        </form>
+    </div>

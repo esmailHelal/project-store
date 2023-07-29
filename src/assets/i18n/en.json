@@ -1,0 +1,237 @@
+{
+  "Global": {
+    "Language": {
+      "en": "English",
+      "ar": "العربية",
+      "tr": "Türkçe"
+    },
+    "UploadMessages": {
+      "preparing": "Preparing your image for upload.",
+      "uploading": "Uploading your image.",
+      "processing": "Processing and removing background.",
+      "downloading": "Downloading processed image",
+      "cropping": "AutoCropper is cropping your image..",
+      "saving-cloud": "Saving the image to cloud",
+      "done": "Your image has been successfully saved.",
+      "failed": "An error has occured while processing your image"
+    },
+    "Update": {
+      "newUpdateAvailable": "New Update has arrived",
+      "newUpdateMessage": "The app needs to be updated to get the latest features and fixes.",
+      "warning": "Warning! The application will reload, any current progress will be lost!",
+      "cancelUpdate": "Cancel",
+      "startUpdate": "Update"
+    },
+    "ToastDefaults": {
+      "success": "Success!",
+      "warn": "Warning!",
+      "error": "Failure",
+      "successMessage": "Your request has been done successfully. 🎉",
+      "errorMessage": "Unfortunately, an error occur while processing your request. 😞"
+    },
+    "Navigation": {
+      "notifications": "Notifications",
+      "gallery": "Gallery",
+      "products-catalogue": "Product Catalogue",
+      "workflows": "Workflows",
+      "settings": "Settings",
+      "support-center": "Support Center",
+      "camera": "Camera",
+      "login": "Login",
+      "welcome": "Welcome",
+      "home": "Home",
+      "editor": "Editor",
+      "not-found": "Not Found",
+      "subscription": "Subscription"
+    },
+    "Alert": {
+      "online": "You're back online.",
+      "offline": "Your connection is lost, your progress will be saved."
+    },
+    "Messages": {
+      "share-success": "Your file has been sucessfully shared!",
+      "share-fail": "An error occured while sharing your file.",
+      "share-not-supported": "Your browser doesn't support sharing.",
+      "image-save-success": "Your image has been saved successfully.",
+      "image-save-error": "An error has occured while saving your image."
+    },
+    "Subscribe": {
+      "plan-over": "Your free plan is over",
+      "plan-over-details": "You have consumed all your free plan. You can get more captures and perks by subscriping to paid plans.",
+      "subscribe-now": "Subscribe Now",
+      "skip": "Subscribe later"
+    }
+  },
+  "Auth": {
+    "username": "User name",
+    "email": "Email",
+    "password": "Password",
+    "confirm-password": "Confirm Password",
+    "username-email": "User name or email",
+    "username-placeholder": "Enter your User Name",
+    "email-placerholder": "Enter your Email",
+    "password-placeholder": "Enter your password",
+    "confirm-password-placeholder": "Retype your password",
+    "username-email-placerholder": "Enter your user name or email",
+    "wrong-login-data": "Wrong login data, please re-enter it.",
+    "username-required": "User name is required",
+    "email-required": "Email is required",
+    "not-email": "This is not correct Email.",
+    "password-required": "Password is required",
+    "re-password-required": "Password Verification is required",
+    "both-password-different": "Both password entries are not the same",
+    "login": "Log in",
+    "new-cartimatic": "New to Cartimatic?",
+    "have-account": "You already have an account?",
+    "create-account": "Create Account",
+    "privacy-terms-message": "By creating an account, you accept Cartimatic’s",
+    "terms": "Terms of service",
+    "policy": "Privacy Policy",
+    "and": "and",
+    "or": "OR",
+    "success": "You have logged in successfully!",
+    "register": "Register",
+    "We-Will-Send-you-passcode": "We Will Send you a passcode to make sure it's your E-mail",
+    "create-product": " Create product images that sell , start your journey here.",
+    "continue-with-facebook": "continue with facebook",
+    "continue-with-google": "Continue with Google",
+    "continue-with-apple": "Continue with Apple",
+    "OR": "OR",
+    "login-in-with-email-or-username": "Login in with Email or Username",
+    "Login-into-your-cartimatic-account": "Login into your Cartimatic account",
+    "wrong-login-data.": "Wrong login data.",
+    "Having-trouble-logging-in": "Having trouble logging in ?",
+    "Reset-your-password": "Reset your password",
+    "Create-your-cartimatic-account": "Create your cartimatic account",
+    "Verify-Password": "Verify Password",
+    "Enter-your-new-password": "Enter your new password",
+    "Passcode": "Passcode",
+    "Passcode-required": "Passcode is required",
+    "wrong-Passcode.": "Wrong Passcode."
+  },
+  "Camera": {
+    "Menu": {
+      "gallery": "Gallery",
+      "import": "Import",
+      "workflows": "Workflows",
+      "products-catalogue": "Product Catalogue",
+      "settings": "Settings",
+      "support-center": "Support Center",
+      "subscription": "Subscription",
+      "collections": "collections",
+      "close": "close",
+      "Cancel": "Cancel"
+    },
+    "Preview": {
+      "save": "Save",
+      "retake": "Retake",
+      "saving": "Saving...",
+      "close": "close"
+    },
+    "Settings": {
+      "label": "Camera Resolution"
+    }
+  },
+  "Gallery": {
+    "title": "Gallery",
+    "no-image-title": "No images in your gallery yet!",
+    "no-image-message": "Start uploading pictures or snaping ones with your mobile device as they will magically sync with your devices.",
+    "Cancel": "Cancel",
+    "New-Product": "New Product",
+    "Product-Name": "Product Name",
+    "Product-Description": "Product Description",
+    "Enter-text": "Enter text",
+    "Type-something-here": "Type something here",
+    "Create-Product": "Create Product",
+    "Edit": "Edit",
+    "Share": "Share",
+    "Copy-Image": "Copy Image",
+    "Download": "Download",
+    "Delete": "Delete",
+    "preview": "Preview"
+  },
+  "products-catalogue": {
+    "Product-Catalogue": "Product Catalogue",
+    "images-Product": "Product Images",
+    "images": "Images",
+    "Cancel": "Cancel",
+    "Edit-Product": "Edit Product",
+    "Edit": "Edit",
+    "Done": "Done",
+    "Product-Name": "Product Name",
+    "Enter-text": "Enter text",
+    "Type-something-here": "Type something here",
+    "product-name-required": "product name is required",
+    "Product-Description": "Product Description",
+    "Product-Description-required": "Product Description is required",
+    "View-&-Edit": "View & Edit",
+    "Save-in-Gallery": "Save in Gallery",
+    "Delete": "Delete"
+  },
+  "Notifications": {
+    "title": "Notifications"
+  },
+  "Support-center": {
+    "title": "Support Center"
+  },
+  "Workflows": {
+    "title": "Workflows"
+  },
+  "Editor": {
+    "title": "Magic Editor"
+  },
+  "Subscription": {
+    "title": "Subscription",
+    "credit-avail": "Credit Available",
+    "captures-credit": "Captures Credit",
+    "credit": "credit",
+    "added-at": "will be added at",
+    "plan-info": "Plan Information",
+    "payment-info": "Payment Information",
+    "capture-count-150": "150 captures added monthly.",
+    "extra-captures": "Unused Captures roll over to the next month.",
+    "real-time": "Real-time sync",
+    "price-info": "Costs $10 only Monthly",
+    "support-res-2k": "Supports up to 1440P resolution.",
+    "price": "Subscription price:",
+    "cropper": "Auto Image cropping",
+    "editor": "Intuitive Image Editor",
+    "expire-at": "Expires at:",
+    "renews-at": "Renews at:",
+    "start-at": "Started at:",
+    "payment": "Payment",
+    "card-info": "Enter your credit card information here in order to subscribe for the Premium plan.",
+    "subscribe": "Subscribe for $10",
+    "cancel": "Cancel Subcription",
+    "cancel-notice": "Your subscription has been cancelled, it will not renew after expiration date.",
+    "prompt-cancel": "Are you sure?",
+    "cancel-para-1": "By cancelling your subscription, your",
+    "cancel-para-2": "will be lost, and this action will be irreversable.",
+    "nevermind": "No, Nevermind",
+    "yes": "Yes, Cancel"
+  },
+  "Settings": {
+    "title": "Settings",
+    "general": {
+      "label": "General",
+      "language": "Language",
+      "notifications": "Notifications",
+      "theme": "Theme",
+      "dark-mode": "Dark Mode",
+      "light-mode": "Light Mode",
+      "default": "Default",
+      "logout": "Logout"
+    },
+    "camera": {
+      "label": "Camera",
+      "frame-rate": "Frame Rate",
+      "magic-cropper": "Magic Cropper",
+      "magic-cropper-description": "Magically crops extra spaces around the object."
+    },
+    "interaction": {
+      "label": "Interaction",
+      "sound-feedback": "Sound feedback",
+      "vibration": "Vibration"
+    }
+  }
+}

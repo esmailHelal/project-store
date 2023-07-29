@@ -1,0 +1,69 @@
+
+<div class="bg-white">
+    <div class="pt-6" *ngIf="product && !spinner">
+     
+      <!-- Image gallery -->
+      <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8" *ngIf="product?.image">
+        <div class="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block mb-3" >
+          <img [src]="product['image']" alt="Two each of gray, white, and black shirts laying flat." class="h-full w-full object-cover object-center">
+        </div>
+       
+      </div>
+  
+      <!-- Product info -->
+      <div class="mx-auto max-w-2xl px-4 pb-16 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pb-24 lg:pt-16">
+        <div class="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
+          <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Basic Tee 6-Pack</h1>
+        </div>
+  
+        <!-- Options -->
+        <div class="mt-4 lg:row-span-3 lg:mt-0"  >
+          <h2 >{{product['title']}}</h2>
+          <p class="text-3xl tracking-tight text-gray-900">${{product['price']}}</p>
+          <div class="text-gray-700 font-semibold text-lg mt-2">
+            Rating: {{product['rating']['rate']}}
+          </div>
+          <div class="text-gray-700 font-semibold text-lg mt-2">
+            Category: {{product['category']}}
+          </div>
+        
+          
+        </div>
+  
+        <div class="py-10 lg:col-span-2 lg:col-start-1 lg:border-r lg:border-gray-200 lg:pb-16 lg:pr-8 lg:pt-6">
+          <!-- Description and details -->
+          <div>
+            <h3 class="sr-only">Description</h3>
+  
+            <div class="space-y-6">
+              <p class="text-base text-gray-900">{{product['description']}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="relative h-20" *ngIf="spinner">
+      <div
+      class="z-20 flex justify-center absolute top-0 left-0 w-full h-full px-4 rounded "
+      [class.select-none]="spinner"
+      
+      [ngClass]="
+        spinner  ? 'bg-ga-overlay-light' : 'bg-black bg-opacity-60'
+      "
+      data-testid="spinnerWrapper"
+    >
+      <mat-progress-spinner
+        *ngIf="spinner"
+        [diameter]="diameter"
+        mode="indeterminate"
+        color="accent"
+      >
+      </mat-progress-spinner>
+    
+     
+    </div>
+    </div>
+  </div>
+  

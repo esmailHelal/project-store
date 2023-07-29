@@ -1,0 +1,130 @@
+<form [formGroup]="productForm" class="flex flex-col justify-center  relative  items-center lg:w-[35%] w-auto bg-white  rounded-[20px] border border-gray-500 border-opacity-50 backdrop-blur-[30px] p-4 my-4" (ngSubmit)="onProductSubmit()">
+    <div class="pt-2 relative mx-auto text-gray-600 px-3 my-3 w-full">
+        <div class="mb-6 relative">
+            <label
+              class="relative bg-[rgba(0,0,0,.04)] block overflow-hidden rounded-2xl px-4 pt-5 pb-2"
+            >
+              <input
+                type="text"
+                placeholder="title"
+                formControlName="title"
+                required
+                class="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+              />
+
+              <span
+                class="absolute left-4 top-5 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:text-[#610BEF] peer-focus:top-5 peer-focus:text-xs"
+                [ngClass]="{
+                  'peer-focus:!text-[#f44336] !text-[#f44336]':
+                    (productForm.controls.title.hasError('required') &&
+                      (productForm.controls.title.touched || productForm.controls.title.dirty)) 
+                }"
+              >
+              Title*
+              </span>
+            </label>
+
+            <mat-error *ngIf="productForm.controls['title'].errors?.['required'] && productForm.controls['title'].touched"
+            class="flex text-red-500">
+                <mat-icon>remove_circle</mat-icon>
+                title is required
+            </mat-error>
+         </div>
+         <div class="mb-6 relative">
+            <label
+              class="relative bg-[rgba(0,0,0,.04)] block overflow-hidden rounded-2xl px-4 pt-5 pb-2"
+            >
+              <input
+                type="text"
+                placeholder="description"
+                formControlName="description"
+                required
+                class="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+              />
+
+              <span
+                class="absolute left-4 top-5 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:text-[#610BEF] peer-focus:top-5 peer-focus:text-xs"
+                [ngClass]="{
+                  'peer-focus:!text-[#f44336] !text-[#f44336]':
+                    (productForm.controls.description.hasError('required') &&
+                      (productForm.controls.description.touched || productForm.controls.description.dirty)) 
+                }"
+              >
+              Description*
+              </span>
+
+             
+            </label>
+            <mat-error *ngIf="productForm.controls['description'].errors?.['required'] && productForm.controls['description'].touched"
+            class="flex text-red-500">
+                <mat-icon>remove_circle</mat-icon>
+                description is required
+            </mat-error>
+         </div>
+         <div class="mb-6 relative">
+            <label
+              class="relative bg-[rgba(0,0,0,.04)] block overflow-hidden rounded-2xl px-4 pt-5 pb-2"
+            >
+              <input
+                type="number"
+                placeholder="price"
+                formControlName="price"
+                required
+                class="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+              />
+
+              <span
+                class="absolute left-4 top-5 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:text-[#610BEF] peer-focus:top-5 peer-focus:text-xs"
+                [ngClass]="{
+                  'peer-focus:!text-[#f44336] !text-[#f44336]':
+                    (productForm.controls.price.hasError('required') &&
+                      (productForm.controls.price.touched || productForm.controls.price.dirty)) 
+                }"
+              >
+              Price*
+              </span>
+            </label>
+
+            <mat-error *ngIf="productForm.controls['price'].errors?.['required'] && productForm.controls['price'].touched"
+              class="flex text-red-500">
+                  <mat-icon>remove_circle</mat-icon>
+                  price is required
+              </mat-error>
+         </div>
+
+         <div class="mb-6 relative">
+            <label
+              class="relative bg-[rgba(0,0,0,.04)] block overflow-hidden rounded-2xl px-4 pt-5 pb-2"
+            >
+              <input
+                type="text"
+                placeholder="category"
+                formControlName="category"
+                required
+                class="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+              />
+
+              <span
+                class="absolute left-4 top-5 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:text-[#610BEF] peer-focus:top-5 peer-focus:text-xs"
+                [ngClass]="{
+                  'peer-focus:!text-[#f44336] !text-[#f44336]':
+                    (productForm.controls.category.hasError('required') &&
+                      (productForm.controls.category.touched || productForm.controls.category.dirty)) 
+                }"
+              >
+              Category*
+              </span>
+            </label>
+            <mat-error *ngIf="productForm.controls['category'].errors?.['required'] && productForm.controls['category'].touched"
+            class="flex text-red-500">
+                <mat-icon>remove_circle</mat-icon>
+                category is required
+            </mat-error>
+         </div>
+       
+      
+        
+        <button  type="submit" class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" >{{type}} Product</button>
+      
+      </div>
+ </form>

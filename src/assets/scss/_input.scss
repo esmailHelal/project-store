@@ -1,0 +1,19 @@
+
+  form {
+    input {
+      border: 1px solid #646161;
+      border-radius: 18px;
+      height: 36px;
+      margin-block: 5px;
+      min-width: 220px;
+      padding-inline: 20px;
+      &:focus{
+          outline: none;
+      }
+    }
+    button{
+      min-width: 220px;
+    }
+  }
+
+
